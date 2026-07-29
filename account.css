@@ -1,105 +1,112 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+padding: 0;
+margin: 0;
+box-sizing: border-box;
 }
 
 body{
-       font-family: "Plus Jakarta Sans", sans-serif;
-       display: flex;
-       background-color: #FBFFFC;
-       gap: 20px;
-       color: #000000;
-;
-
+font-family: "Plus Jakarta Sans", sans-serif;
+background-color: #FBFFFC;
+color: #000000;
 }
 
+.create-account{
+display: flex;
+width: 1324px;
+height: 950px;
+margin: 37px 58px;
+}
 
 .image-container{
+width: 633px;
+height: 100%;
+}
+
+.image{
 display: flex;
 flex-direction: column;
-align-items: center;
+justify-content: space-between;
 width: 633px;
 height: 950px;
 }
 
-.logo{
-display: inline-block;
+.car-ride{
+width: 633px;
+height: 950px;
+object-fit: contain;
+position: relative;
+top: 37px;
+}
+
+.ecoride-logo{
 width: 270px;
-height: auto;
-padding-top: 131px;
+height: 263px;
+object-fit: cover;
+position: relative;
+top: 131px;
 left: 188px;
 }
 
-.car{
-width: 633px;
-height: 950px;
-padding-top: 37px;
-padding-left: 58px;
-border-top-left-radius: 20px;
-border-bottom-left-radius: 20px;
-object-fit: contain;
-
-}
-
-.input-body{
-display: flex;
-flex-direction: column;
+.input-container{
 width: 691px;
 height: 950px;
-top: 37px;
-left: 691px;
-border-top-right-radius: 20px;
-border-bottom-right-radius: 20px;
-gap: 192px; 
+padding-top: 63px;
+padding-left: 83px;
+}
+
+.input-form{
+width: 524px;
+height: 824px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
 }
 
 
 .heading{
 width: 458px;
 height: 98px;
-gap: 8px;
 }
 
 
-h1{
+.heading h1{
+height: 60px;
 font-weight: 600;
 font-size: 48px;
 color: #000000;
-font-style: SemiBold;
 }
 
 
 h1 span{
-    color: #34A853;
+color: #34A853;
+font-weight: 600;
+font-size: 48px;
 }
 
-.paragraph{
-    font-weight: 500;
-    font-size: 24px;
+.sub-heading{
+height: 30px;
+font-weight: 500;
+font-size: 24px;
+font-style: Medium;
 }
-
-
 
 .form-body{
 display: grid;
-opacity: 1;
-grid-template-columns: 1fr 1fr;
-grid-template-rows: auto;
-row-gap: 8px;
 width: 524px;
-height: 534px;
-gap: 64px;
+height: 412px;
+grid-template-rows: 5;
+grid-template-columns: 1;
+gap: 8px;
 }
 
-.name{
+.name-input{
 display: flex;
 width: 524px;
 height: 76px;
 gap: 24px;
 }
 
-.firstname{
+.company-name{
 display: flex;
 flex-direction: column;
 width: 250px;
