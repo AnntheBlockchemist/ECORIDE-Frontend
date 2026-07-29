@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn">
 <link rel="stylesheet" href="account.css">
 </head>
 
@@ -28,65 +29,55 @@
 
 <header class="heading">
 <h1>Create <span>Account</span> </h1>
-<p class="sub-heading">Join Ecoride and start carpooling today.</p>
+<h2 class="sub-heading">Join Ecoride and start carpooling today.</h2>
 </header>
+
 
 <section class="form-body">
 <form>
 
-<div class="name-input">
 
-<div class="company-name">
-    <label for="companyname">Company name</label>
-  <input type="text" placeholder="Enter company Name" id="companyname">
+<div class="input-data">
+<label for="companyname">Company name</label>
+<input type="text" placeholder="Enter company Name" id="companyname">
+
+
+<label for="emailaddress">Email address</label>
+<input type="email" placeholder="Enter email address" id="emailaddress">
+
+
+<label for="password">Password</label>
+<input type="password" placeholder="Enter password" id="password">
+
+
+<label for="password">Confirm password</label>
+<input type="password" placeholder="Enter password" id="password">
+
+<div class="phonenumber-container">
+
+<label for="phonenumber">Phone number</label>
+<div class="phonenumber-input">
+    <img width: 21px; height:16px; src="assets/nigeriaflag.svg" alt="Nigeria flag">
+    <select name="" id="">+234</select>
+>
+<span>+234</span>
+<input type="tel" placeholder="8129038428" id="phonenumber">
 </div>
 
-<div class="lastname">
-            <label for="lastname">Last name</label>
-    <input type="text" placeholder="Enter last name" id="lastname">
-       </div>
-    
-    </div>
-    
-    <div class="userdetails">
+</div>
 
-        <div class="emailaddress">
-        <label for="email">Email address</label>
-        <input type="email" placeholder="Enter email address" id="email">
-    </div>
+</div>
 
-    <div class="password">
-        <label for="password">Password</label>
-        <input type="password" placeholder="Enter password" id="password">
-    </div>
 
-    <div class="password">
-        <label for="password">Confirm password</label>
-        <input type="password" placeholder="Enter password" id="password">
-    </div>
+<div class="button-wrapper">
+<button type="submit" class="signup-button">Sign Up</button>
+<p class="login">Already have an account? <a href="#">Login</a></p>
+</div>
 
-    <div class="phonenumber">
-        <label for="phonenumber">Phone number</label>
-        <input type="tel" placeholder="8129038428" id="phonenumber">
-    </div>
 
-    </div>
-
-   <section class="signup">
-        <button type="submit" class="signup-btn">Sign Up</button>
-
-        <p class="login">Already have an account? <span> Log In</span>
-        </p>
-    </section>
-    </form>
+</form>
 </section>
 
-    
-</section>
-
-    </section>
-    </div>
-</section>
 </main>
 </body>
 </html>
