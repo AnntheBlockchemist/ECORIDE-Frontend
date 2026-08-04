@@ -10,21 +10,14 @@ body {
     background-color: #fafafa;
 }
 
-/* Master Layout Framework */
+
 .dashboard-container {
     display: grid;
-    grid-template-columns: 260px 1px; /* 1px fallback for grid auto-stretch */
+    grid-template-columns: 260px 1px; 
     grid-template-areas: "sidebar main";
     min-height: 100vh;
 }
 
-@media (min-width: 769px) {
-    .dashboard-container {
-        grid-template-columns: 260px 1fr;
-    }
-}
-
-/* Structural Layout: Sidebar Panel */
 .sidebar {
     background-color: #fafafa;
     border-right: 1px solid #e0e0e0;
@@ -83,7 +76,7 @@ body {
     color: #ffffff;
 }
 
-/* Structural Layout: Navigation Footer elements*/
+
 .support-container {
     width: 280px;
     height: 132px;
@@ -165,13 +158,11 @@ body {
 }
 
 
-/* Structural Layout: Content Window */
 .main-content {
     height: 1027px;
     width: 1161px;
 }
 
-/* Top Interface Header */
 .top-header{
     width: 1158px;
     height: 82px;
@@ -255,7 +246,7 @@ body {
     margin-left: 30px;
 }
 
-/* Data Content Panels Layout */
+
 .body-all{
     width: 1094px;
     height: 904px;
@@ -317,7 +308,7 @@ body {
     background-color: #ffffff;
 }
 
-/* Dynamic Tabular Systems styling */
+
 .table-container {
     width: 100%;
     overflow-x: auto;
@@ -367,7 +358,7 @@ td {
     font-weight: 400;
 }
 
-/* System Flags styling classes */
+
 .status {
     padding: 4px 9px;
     font-size: 10px;
@@ -419,45 +410,4 @@ td {
     background: #d1d2d1;
 }
 
-/* Device Optimization Handling Matrix */
-@media (max-width: 992px) {
-    .dashboard-container {
-        grid-template-columns: 80px 1fr;
-    }
-    .logo, .nav-menu a span, .sidebar-footer, .user-info, .dropdown-icon {
-        display: none !important;
-    }
-    .nav-menu a {
-        justify-content: center;
-        padding: 14px;
-    }
-    .nav-menu a i {
-        font-size: 20px;
-    }
-}
 
-@media (max-width: 768px) {
-    .dashboard-container {
-        display: flex;
-        flex-direction: column;
-    }
-    .sidebar {
-        height: auto;
-        position: relative;
-        width: 100%;
-        padding: 12px;
-    }
-    .nav-menu {
-        flex-direction: row;
-        justify-content: space-around;
-    }
-    .nav-menu a {
-        display: block;
-    }
-    .main-content {
-        padding: 16px;
-    }
-    .search-box {
-        width: 100%;
-    }
-}
